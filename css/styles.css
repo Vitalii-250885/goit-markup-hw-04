@@ -200,33 +200,13 @@ p {
     display: flex;
 }
 
-.privelege-list .item::before {
-    display: block;
-    content: '';
-    height: 120px;
-    background-size: contain;
-    background-position: center;
-    margin-bottom: 30px;
-}
-
-.privelege-list .item:nth-child(1)::before {
-    background-image: url(../images/antenna.svg);
-}
-
-.privelege-list .item:nth-child(2)::before {
-    background-image: url(../images/clock.svg);
-}
-
-.privelege-list .item:nth-child(3)::before {
-    background-image: url(../images/diagram.svg);
-}
-
-.privelege-list .item:nth-child(4)::before {
-    background-image: url(../images/astronaut.svg);
-}
-
 .privelege-list .item + .item {
     margin-left: 30px;
+}
+
+.privelege-icon {
+    width: 270px;
+    margin-bottom: 30px;
 }
 
 .privelege-h {
@@ -265,6 +245,10 @@ p {
     border-radius: 0px 0px 4px 4px;
 }
 
+.team .item {
+    background: #ffffff;
+}
+
 .team .item + .item {
     margin-left: 30px;
 }
@@ -288,10 +272,68 @@ p {
     margin-bottom: 10px;
 }
 
+.team-icon-list {
+    display: flex;
+    justify-content: center;
+}
+
+.team-icon-link {
+    fill: red;
+}
+
+.team-icon-link:hover {
+    fill: var(--active-link-color);
+}
+
+.team-icon {
+    width: 44px;
+    height: 44px;
+    fill: green;
+}
+
+.team-icon:hover {
+    
+    fill: var(--active-link-color);
+}
+
+.team-icon-list .item-snet + .item-snet {
+    margin-left: 10px;
+}
+
 .job-title {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+    margin-bottom: 16px;
+}
+
+.regular-customers-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.regular-customers-h {
+    color: var(--secondary-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.regular-customers-list {
+    display: flex;
+    justify-content:center;
+}
+
+.regular-customers-list .item {
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.regular-customers-list .item + .item {
+    margin-left: 30px;
 }
 
 .footer-section {
