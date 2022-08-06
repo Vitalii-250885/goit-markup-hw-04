@@ -143,8 +143,7 @@ p {
 
 .hero-section {
     background-color: #2F303A;
-    background: rgba(47, 48, 58, 0.4);
-    background-image: url(../images/hero-bgimg-min.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/hero-bgimg-min.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -210,6 +209,9 @@ p {
 }
 
 .privelege-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 270px;
     height: 120px;
     background-color: var(--secondary-bgcolor);
@@ -220,7 +222,6 @@ p {
 .privelege-icon {
     width: 70px;
     height: 70px;
-    margin: 25px 100px;
 }
 
 .privelege-list {
@@ -353,18 +354,20 @@ p {
     justify-content:center;
 }
 
-.regular-customers-div {
+.regular-customers-icon {
+    width: 106px;
+    height: 60px;
+    fill: #AFB1B8;
+}
+
+.regular-customers-icon-a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     width: 170px;
     height: 92px;
-}
-
-.regular-customers-icon {
-    width: 106px;
-    height: 60px;
-    margin: 16px 32px;
-    fill: #AFB1B8;
 }
 
 .regular-customers-icon-a:hover .regular-customers-div {
