@@ -301,15 +301,17 @@ p {
     justify-content: center;
 }
 
-.team-icon-link {
-    display: block;
+.team-icon-a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 44px;
     width: 44px;
     border-radius: 50%;
 }
 
-.team-icon-a:hover .team-icon-link, 
-.team-icon-a:focus .team-icon-link {
+.team-icon-a:hover, 
+.team-icon-a:focus {
     background-color: var(--active-link-color);
 }
 
@@ -317,7 +319,6 @@ p {
     width: 20px;
     height: 20px;
     fill: #AFB1B8;
-    margin: 12px;
 }
 
 .team-icon-a:hover .team-icon, 
@@ -373,8 +374,8 @@ p {
     height: 92px;
 }
 
-.regular-customers-icon-a:hover .regular-customers-div, 
-.regular-customers-icon-a:focus .regular-customers-div {
+.regular-customers-icon-a:hover, 
+.regular-customers-icon-a:focus {
     border-color: var(--active-link-color);
 }
 
@@ -441,19 +442,20 @@ address {
     width: 20px;
     height: 20px;
     fill: #ffffff;
-    margin: 12px;
 }
 
-.social-footer-icon-div {
-    display: block;
+.social-footer-icon-a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 44px;
     width: 44px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
 }
 
-.social-footer-icon-a:hover .social-footer-icon-div, 
-.social-footer-icon-a:focus .social-footer-icon-div {
+.social-footer-icon-a:hover, 
+.social-footer-icon-a:focus {
     background: var(--active-link-color);
 }
 
